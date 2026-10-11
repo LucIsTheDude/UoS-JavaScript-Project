@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Robot</title>
+    <meta name="author" content="Luc Smith">
+
+    <!-- This ensures accurate scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Setting the tab icon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+
+    <!-- Linking my CSS files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Robot</h1>
+    </header>
+    
+    <div class="canvas_div">
+        <canvas id="my_canvas" width="600" height="400"></canvas>
+    </div>
+    <p class="buttons">
+        <button id="power_button" class="powerOn">Power On</button>
+        <button id="charge_button">Charge Robot</button>
+    </p>
+
+    <h3>How to operate the robot:</h3>
+    <p class="desc">
+        To start, press the "Power On" button. This will turn the robot on and 
+        will allow you to click on the canvas to perform actions. You can move 
+        the robot by clicking on the canvas anywhere at leg level or below. 
+        You can also make the robot spin either of it's arms for a few seconds 
+        by clicking on them. Finally, if you click anywhere else on the canvas, 
+        the robot will fire lasers at that location. If you want to charge the 
+        robot, press the "Charge Robot" button, this will charge the robot for 
+        a few seconds back to full power. You can also power the robot off 
+        whenever you want by pressing the "Power Off" button.
+    </p>
+
+    <p class="desc">
+        My robot software works on all plaforms and screen sizes as the canvas 
+        and elemets scale appropriately. This includes mobile devices, tablets, 
+        and desktops.
+    </p>
+
+    <footer>
+        <p>&copy; Luc Smith, 2025</p>
+    </footer>
+
+    <!-- Linking my script -->
+    <script src="js/robot.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+/*
+This is the main CSS file for this page.
+This has been developed mobile-first.
+Written by Luc Smith
+*/
+
+/* General styling of the page */
+
+header {
+    margin-top: 0.2%;
+}
+
+body {
+    /* This keeps all the elements aligned at the centre */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: beige;
+    min-width: 300px;
+}
+
+canvas {
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+p.desc {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
+p.buttons {
+    width: 100%;
+    margin: 0;
+}
+
+.canvas_div {
+    display: inline-block;
+    border: 2px solid grey;
+    margin: 10px;
+    background-color: white;
+}
+
+/* Styling for the buttons */
+/* '!important' had to be used to override the JavaScript colours */
+
+button {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#power_button {
+    padding: 10px 25px;
+    background-color: limegreen;
+}
+
+#power_button.powerOn:disabled {
+    background-color: lightgreen !important;
+}
+
+#power_button.powerOff:disabled {
+    background-color: lightcoral !important;
+}
+
+#power_button:not(:disabled).powerOn:hover {
+    background-color: green !important;
+}
+
+#power_button:not(:disabled).powerOff:hover {
+    background-color: darkred !important;
+}
+
+#charge_button {
+    background-color: royalblue;
+}
+
+#charge_button:disabled {
+    background-color: skyblue;
+}
+
+#charge_button:not(:disabled):hover {
+    background-color: blue;
+}
+
+/* Media query to scale up the elements for desktop usage */
+@media screen and (min-width: 600px) {
+    p.desc {
+        width: 550px;
+        margin-bottom: 1%;
+        padding: 10px;
+    }
+}
